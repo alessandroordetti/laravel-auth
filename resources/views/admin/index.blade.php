@@ -9,9 +9,11 @@
                             {{$post->author}}
                         </h2>
 
-                        <div>
-                            <img src="{{$post->image}}" alt="">
-                        </div>
+                        <a href="{{route("admin.posts.show", $post)}}">
+                            <div>
+                                <img src="{{$post->image}}" alt="">
+                            </div>
+                        </a>
 
                         <p>
                             {{$post->description}}
